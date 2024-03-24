@@ -1,0 +1,25 @@
+meta {
+  name: POST ResBuilding
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/energy/residentialBuilding
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "home",
+    "address": {
+      "province": "",
+      "district": "",
+      "street": "",
+      "buildingNumber": 1,
+      "indoorNumber": 1,
+      "zipCode": ""
+    }
+  }
+}
